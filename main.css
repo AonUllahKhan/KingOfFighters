@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+.container .images .image-box{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images .image-box{
+    margin: 20px;
+}
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.2s linear;
+}
+.image-box img:hover{
+    transform: scale(1.05);
+    background-color: #fff44f;
+    
+}
+
+
+.image-box h6{
+    width: 100%;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    color: black ;
+    background: #fff44f;
+    font-size: 15px;
+    font-family: 'Russo One', sans-serif;
+    text-transform: capitalize;
+}
+
+.character_select {
+    background-color: #fff44f;
+    font-size: large;
+    color: black;
+    left: 50%;
+    top: 20%;
+    padding: 5px 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+}
+.char_pic {
+    background-color: #ff2400 ;
+    width: 100%;
+    height: 250px;
+    margin-top: 195px;
+    margin-bottom: 200px;
+
+}
+.terry_L{
+    font-family: 'Russo One', sans-serif;
+    font-size: 100px;
+    color: #fff44f;
+    background-color: #ff2400;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.terry_R{
+    font-family: 'Russo One', sans-serif;
+    font-size: 100px;
+    color: #fff44f;
+    background-color: #ff2400;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.char_pic img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #fff44f;
+    border: #fff44f solid 20px;
+}
+
+.iori_L {
+    font-family: 'Russo One', sans-serif;
+    font-size: 100px;
+    color: #fff44f;
+    background-color: #ff2400;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.iori_R{
+    font-family: 'Russo One', sans-serif;
+    font-size: 100px;
+    color: #fff44f;
+    background-color: #ff2400;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+/* ENTRANCE PAGE */
+
+.entrance {
+    height: 625px;
+    width: 100%;
+    background-image: url(KOF_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.entrance_link {
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 4px solid #ff2400 ;
+    color: #fff44f;
+    background: #ff2400;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    transition: all 1s ease 0s;
+
+}
+
+.entrance_link:after{
+    position: absolute;
+    content: "";
+    background: #fff44f;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+
+.entrance_link:hover {
+    color: #ff2400;
+}
+
+.entrance_link:hover:after {
+    width: 100%;
+}
+@media (max-width: 800px){
+    .entrance_link {
+        margin-left: -2%;
+    }
+}
+@media (max-width: 650px){
+    .entrance_link {
+        margin-left: -5%;
+    }
+}
+@media (max-width: 480px){
+    .entrance_link {
+        margin-left: -8%;
+    }
+}
+@media (max-width: 440px){
+    .entrance_link {
+        margin-left: -10%;
+    }
+}
+@media (max-width: 400px){
+    .entrance_link {
+        margin-left: -12%;
+    }
+}
+
+/* LOADING PAGE */
+
+.loading {
+    height: 625px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading_text {
+    
+    color: #fff44f;
+
+    text-shadow: -1px 1px 0 #ff2400,
+                          1px 1px 0 #ff2400,
+                         1px -1px 0 #ff2400,
+                        -1px -1px 0 #ff2400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.loading_h1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1;
+}
+
+.loading_bar {
+    width: 40%;
+    height: 20px;
+    border: 4px solid #ff2400;
+    background: #ff2400;
+}
+
+.loading_innerbar {
+    height: 12px;
+    background: #fff44f;
+    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+.content_post {
+    display: none;
+}
+
+.main_link {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 4px solid #ff2400 ;
+    color: #fff44f;
+    background: #ff2400;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    transition: all 1s ease 0s;
+
+}
+
+.main_link:after{
+    position: absolute;
+    content: "";
+    background: #fff44f;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+
+.main_link:hover {
+    color: #ff2400;
+}
+
+.main_link:hover:after {
+    width: 100%;
+}
